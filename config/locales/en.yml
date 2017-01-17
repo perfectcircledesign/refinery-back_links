@@ -1,0 +1,30 @@
+en:
+  refinery:
+    plugins:
+      back_links:
+        title: Back Links
+    back_links:
+      admin:
+        back_links:
+          actions:
+            create_new: Add New Back Link
+            reorder: Reorder Back Links
+            reorder_done: Done Reordering Back Links
+          records:
+            title: Back Links
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Back Links yet. Click "Add New Back Link" to add your first back link.
+          back_link:
+            view_live_html: View this back link live <br/><em>(opens in a new window)</em>
+            edit: Edit this back link
+            delete: Remove this back link forever
+      back_links:
+        show:
+          other: Other Back Links
+  activerecord:
+    attributes:
+      'refinery/back_links/back_link':
+        old_link: Old Link
+
+        new_link: New Link
+

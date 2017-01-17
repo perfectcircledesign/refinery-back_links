@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="back_links">
+    <% @back_links.each do |back_link| %>
+      <li>
+        <%= link_to back_link.old_link, refinery.back_links_back_link_path(back_link) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

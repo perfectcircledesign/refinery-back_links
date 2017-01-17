@@ -1,0 +1,30 @@
+sk:
+  refinery:
+    plugins:
+      back_links:
+        title: Back Links
+    back_links:
+      admin:
+        back_links:
+          actions:
+            create_new: Pridať Back Link
+            reorder: Preusporiadať Back Links
+            reorder_done: Koniec radenia Back Links
+          records:
+            title: Back Links
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Back Links. Kliknite na "Pridať Back Link" pre pridanie prvého back link.
+          back_link:
+            view_live_html: Zobraziť náhľad back link<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť back link
+            delete: Zmazať back link
+      back_links:
+        show:
+          other: Daľšie Back Links
+  activerecord:
+    attributes:
+      'refinery/back_links/back_link':
+        old_link: Old Link
+
+        new_link: New Link
+

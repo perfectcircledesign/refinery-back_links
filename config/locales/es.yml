@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      back_links:
+        title: Back Links
+#        article: masculino/femenino
+    back_links:
+      admin:
+        back_links:
+          actions:
+            create_new: Crear nuevo back link
+            reorder: Reordenar back links
+            reorder_done: Reordenación de back links completada
+          records:
+            title: Back Links
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay back links todavía. Pulsa en "Crear nuevo Back Link" para crear tu primer back link.
+          back_link:
+            view_live_html: Ver este back link como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este back link
+            delete: Borrar este back link para siempre
+      back_links:
+        show:
+          other: Otros back links
+  activerecord:
+    attributes:
+      'refinery/back_links/back_link':
+        old_link: Old Link
+
+        new_link: New Link
+

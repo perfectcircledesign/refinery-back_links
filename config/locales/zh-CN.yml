@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      back_links:
+        title: Back Links
+    back_links:
+      admin:
+        back_links:
+          actions:
+            create_new: 建立新的 Back Link
+            reorder: 对 Back Links 重新排序
+            reorder_done: 对 Back Links 的重新排序结束
+          records:
+            title: Back Links
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Back Links yet. Click "Add New Back Link" to add your first back link.
+            no_items_yet: 目前没有 Back Links . 点击 "Add New Back Link" 创建一个back link.
+          back_link:
+            view_live_html: 查看 back link 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 back link
+            delete: 永久删除 back link
+      back_links:
+        show:
+          other: 其他 Back Links
+  activerecord:
+    attributes:
+      'refinery/back_links/back_link':
+        old_link: Old Link
+
+        new_link: New Link
+

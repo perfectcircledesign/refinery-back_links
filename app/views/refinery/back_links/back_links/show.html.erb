@@ -1,0 +1,40 @@
+<% content_for :body_content_title do %>
+  <%= @back_link.old_link %>
+<% end %>
+
+<% content_for :body do %>
+
+  <section>
+    <h1>Old Link</h1>
+    <p>
+
+      <%=raw @back_link.old_link %>
+
+    </p>
+  </section>
+
+  <section>
+    <h1>New Link</h1>
+    <p>
+
+      <%=raw @back_link.new_link %>
+
+    </p>
+  </section>
+
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="back_links">
+      <% @back_links.each do |back_link| %>
+        <li>
+          <%= link_to back_link.old_link, refinery.back_links_back_link_path(back_link) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

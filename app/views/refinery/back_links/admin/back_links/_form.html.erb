@@ -1,0 +1,30 @@
+
+<%= form_for [refinery, :back_links_admin, @back_link] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @back_link,
+              :include_object_name => true %>
+
+
+
+
+  <div class='field'>
+    <%= f.label :old_link -%>
+    <%= f.text_field :old_link, :class => 'larger widest' -%>
+  </div>
+
+
+
+
+  <div class='field'>
+    <%= f.label :new_link -%>
+    <%= f.text_field :new_link, :class => 'larger widest'  -%>
+  </div>
+
+
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.back_links.admin.back_links.back_link'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @back_link.old_link) -%>
+<% end -%>
+

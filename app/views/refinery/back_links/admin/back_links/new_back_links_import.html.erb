@@ -1,0 +1,13 @@
+<h2>Upload a XLS file containing updated Back Links information</h2>
+
+<p>Please select the XLS file you wish to upload, and click 'Import'.</p>
+
+<%= form_tag refinery.admin_import_path, :multipart => true do %>
+  <p>
+  <%= file_field_tag :file %>
+  </p>
+  <p>
+  <%= submit_tag "Import", :data => { :disable_with => "Please wait..." } %> <%= link_to "Back", "/refinery/back_links", :class=>"button" %>
+  </p>
+<% end %>
+

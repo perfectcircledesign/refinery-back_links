@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      back_links:
+        title: Back Links
+    back_links:
+      admin:
+        back_links:
+          actions:
+            create_new: Lag en ny Back Link
+            reorder: Endre rekkefølgen på Back Links
+            reorder_done: Ferdig å endre rekkefølgen Back Links
+          records:
+            title: Back Links
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Back Links enda. Klikk på "Lag en ny Back Link" for å legge til din første back link.
+          back_link:
+            view_live_html: Vis hvordan denne back link ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne back link
+            delete: Fjern denne back link permanent
+      back_links:
+        show:
+          other: Andre Back Links
+  activerecord:
+    attributes:
+      'refinery/back_links/back_link':
+        old_link: Old Link
+
+        new_link: New Link
+

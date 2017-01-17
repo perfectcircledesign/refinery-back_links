@@ -1,0 +1,28 @@
+<ul>
+  <% if ::Refinery::BackLinks::Admin::BackLinksController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.back_links_admin_back_links_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_back_links_admin_back_link_path,
+                 :class => "add_icon" %>
+  </li>
+  <li>
+    <%= link_to('Import XLS', refinery.new_back_links_import_path, :style => 'background-image: url(/assets/icon_excel.png);') %>
+  </li>
+<% if !searching? && ::Refinery::BackLinks::Admin::BackLinksController.sortable? && ::Refinery::BackLinks::BackLink.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Back Links"),
+                 refinery.back_links_admin_back_links_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Back Links"),
+                 refinery.back_links_admin_back_links_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

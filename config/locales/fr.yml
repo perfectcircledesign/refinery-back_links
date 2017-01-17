@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      back_links:
+        title: Back Links
+    back_links:
+      admin:
+        back_links:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Back Link
+            reorder: Réordonner les Back Links
+            reorder_done: Fin de réordonnancement des Back Links
+          records:
+            title: Back Links
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Back Link. Cliquer sur "Créer un(e) nouve(au/l/lle) Back Link" pour créer votre premi(er/ère) back link.'
+          back_link:
+            view_live_html: Voir ce(t/tte) back link <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) back link
+            delete: Supprimer définitivement ce(t/tte) back link
+      back_links:
+        show:
+          other: Autres Back Links
+  activerecord:
+    attributes:
+      'refinery/back_links/back_link':
+        old_link: Old Link
+
+        new_link: New Link
+
