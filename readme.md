@@ -1,4 +1,4 @@
-
+gem "refinerycms-back_links", :git => "git://github.com/perfectcircledesign/refinerycms-back_links.git", :branch => "master"
 bundle install
 rails generate refinery:back_links
 rake db:migrate
