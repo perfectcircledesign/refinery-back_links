@@ -70,3 +70,4 @@ group :assets do
 end
 
 gem 'jquery-rails', '~> 2.0.0'
+gem 'roo', '~> 1.13.2'
