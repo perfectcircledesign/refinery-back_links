@@ -25,9 +25,10 @@ module Refinery
         spreadsheet = open_spreadsheet(file)
         header = spreadsheet.row(1)
         (2..spreadsheet.last_row).each do |i|
-          row = Hash[[header, spreadsheet.row(i)].transpose]
-          link = where(:old_link => row["old_link"].to_s).first || new
-          link.attributes = row.to_hash
+          row = spreadsheet.row(i)
+          link = where(:old_link => row.first.to_s).first || new
+          link.old_link = row.first
+          link.new_link = row.last
           link.save!
         end
       end
